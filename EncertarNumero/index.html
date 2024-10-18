@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc - Encerta el número!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Joc - Encerta el número!</h1>
+            <button id="resetBtn" disabled>Reinicia!</button>
+        </header>
+        <main>
+            <div class="game-info">
+                <p id="message">Comencem la partida...</p>
+                <p id="secretNumber">?</p>
+            </div>
+            <div class="game-stats">
+                <div class="stat">
+                    <p>Jugades: <span id="attempts">20</span></p>
+                </div>
+                <div class="stat">
+                    <p>Total punts: <span id="highscore">0</span></p>
+                </div>
+            </div>
+            <div class="input-section">
+                <input type="number" id="guessInput" placeholder="Entra un número">
+                <button id="guessBtn">Prova</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
